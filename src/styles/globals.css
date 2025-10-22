@@ -1,0 +1,29 @@
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font import (optional - use Inter or Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap');
+
+html {
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+body {
+  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 ease-in-out;
+  min-height: 100vh;
+}
+
+/* Responsive card shadow + smooth transitions */
+.card {
+  @apply shadow-lg hover:shadow-2xl transition-all duration-300;
+}
+
+/* Misc: markdown styling (optional) */
+.markdown-content h1, .markdown-content h2, .markdown-content h3 {
+  @apply font-semibold mt-4 mb-2;
+}
+.markdown-content p {
+  @apply mb-2;
+}
